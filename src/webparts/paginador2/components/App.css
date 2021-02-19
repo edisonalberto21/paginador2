@@ -1,0 +1,44 @@
+.sn-todas-las-noticas img{
+    width: 100%;
+}
+
+.linea{
+    margin-bottom: 15px;
+}
+
+.pagination li a {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+.ms-WPBorder {
+    border: inherit !important;
+}
+
+.centralNoticias h5{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: var(--clr-blue-dark);
+    margin-top: 30px;
+}
+
+.centralNoticias>h5:after {
+    background-color: var(--clr-blue-dark);
+    display: block;
+    content: "";
+    height: 5px;
+    margin: 1em 0;
+    padding: 0;
+    width: 150px;
+}
+
+.sn-intro-home-personas h4{
+    margin-top: 20px !important;
+   }
+.paginationContainer_b319fd73 .searchWp__paginationContainer__pagination_b319fd73 ul li a i {
+       font-size: 14px !important;
+   }
+.centralNoticias{
+       margin-top:145px
+   }

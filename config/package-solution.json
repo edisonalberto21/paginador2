@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "Paginador-Noticias-dev",
+    "id": "e52eb462-13ea-4ffc-b462-65e18ab02b23",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/paginador-2-dev.sppkg"
+  }
+}

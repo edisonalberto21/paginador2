@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "paginador-2-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/paginador2/Paginador2WebPart.js",
+          "manifest": "./src/webparts/paginador2/Paginador2WebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "Paginador2WebPartStrings": "lib/webparts/paginador2/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "environments": [
+    {
+      "environment": "default",
+      "id": "e52eb462-13ea-4ffc-b462-65e18ab02b23",
+      "name": "Paginador-Noticias",
+      "zip": "solution/paginador-2.sppkg",
+      "cdn": "<--Ruta de CDN-->",
+      "entries": [
+        {
+          "id": "b1924310-6c79-4a5d-82a8-caf85bf1dc42",
+          "location": "./src/webparts/paginador2/Paginador2WebPart.manifest.json"
+        }
+      ]
+    },
+    {
+      "environment": "dev",
+      "id": "e52eb462-13ea-4ffc-b462-65e18ab02b23",
+      "name": "Paginador-Noticias-dev",
+      "zip": "solution/paginador-2-dev.sppkg",
+      "cdn": "/CDN/Paginador",
+      "entries": [
+        {
+          "id": "b1924310-6c79-4a5d-82a8-caf85bf1dc42",
+          "location": "./src/webparts/paginador2/Paginador2WebPart.manifest.json"
+        }
+      ]
+    },
+    {
+      "environment": "uat",
+      "id": "e52eb462-13ea-4ffc-b462-65e18ab02b23",
+      "name": "Paginador-Noticias-uat",
+      "zip": "solution/paginador-2-uat.sppkg",
+      "cdn": "/CDN/Paginador",
+      "entries": [
+        {
+          "id": "b1924310-6c79-4a5d-82a8-caf85bf1dc42",
+          "location": "./src/webparts/paginador2/Paginador2WebPart.manifest.json"
+        }
+      ]
+    }
+  ]
+}
