@@ -3,4 +3,5 @@ export interface IPagingProps {
     itemsCountPerPage: number;
     onPageUpdate: (pageNumber: number) => void;
     currentPage: number;
+    
 }

@@ -18,6 +18,7 @@ export interface IPaginador2WebPartProps {
   selectedIds: string[];
   selectedColumnsAndType: any[];
   pageSize: number;
+  eleccion:string;
 }
 
 export default class Paginador2WebPart extends BaseClientSideWebPart<IPaginador2WebPartProps> {
@@ -36,7 +37,8 @@ export default class Paginador2WebPart extends BaseClientSideWebPart<IPaginador2
         displayMode: this.displayMode,
         selectedColumns: this.selectedColumns(),
         pageSize: this.properties.pageSize,
-        context:this.context
+        context:this.context,
+        eleccion:this.properties.eleccion
       }
     );
 
@@ -100,12 +102,20 @@ export default class Paginador2WebPart extends BaseClientSideWebPart<IPaginador2
                   onGetErrorMessage: this.validateTitle.bind(this)
                 }),
                 PropertyPaneDropdown('pageSize',{
-                  label: strings.PageSizeFieldLabel,
+                  label: 'Número de noticias por página',
                   options:[
                     {key: '4', text: '4'},
                     {key: '8', text: '8'},
                     {key: '12', text: '12'},
                     {key: '16', text: '16'},
+                    ]
+                }),
+                 PropertyPaneDropdown('eleccion',{
+                  label: 'Seleccione fuente de datos',
+                  options:[
+                    {key: 'Noticias', text: 'Noticias'},
+                    {key: 'ConvocatoriasNacionales', text: 'Convocatorias Nacionales'},
+                    {key: 'ConvocatoriasInternacionales', text: 'Convocatorias Internacionales'},
                     ]
                 })
               ]

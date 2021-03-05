@@ -13,4 +13,5 @@ export interface IPaginador2Props {
   pageSize: number;
   selectedColumns: any[];
   context:WebPartContext;
+  eleccion:string;
 }
