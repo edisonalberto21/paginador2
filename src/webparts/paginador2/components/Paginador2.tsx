@@ -51,7 +51,7 @@ export default class Paginador2 extends React.Component<IPaginador2Props, IViewA
 
     //Inicio Renderizado
     const elementos: JSX.Element[] = items.map((item: any, i: number): JSX.Element => {   //Recorre el primer elemeto del array, para mostrar la primera noticia
-   
+     
     if(this.props.eleccion == "Noticias"){   //REcibe el prop de la webpart para ejecutar la consulta
       var descripcionNoticias = item.Noticias_Descripcion.length  < 500 ? item.Noticias_Descripcion : item.Noticias_Descripcion.substring(0, 500)
    
@@ -71,11 +71,11 @@ export default class Paginador2 extends React.Component<IPaginador2Props, IViewA
       }
      if(this.props.eleccion == "ConvocatoriasNacionales" || (this.props.eleccion == "ConvocatoriasInternacionales"))   {
       var descripcionConvocatorias = item.descripcion.length  < 500 ? item.descripcion : item.descripcion.substring(0, 500)
-    
+      console.log(item.NuevaVentana)
      return (
       <div className="col linea col-12 col-sm-6 col-lg-3">
           <div className="card h-100 sn-todas-las-noticas">
-             <a href={item.FileRef}  target={`${item.NuevaVentana   ? "_blank" : "_self"}`} title="Agencia pública de empleo de Colombia" >
+             <a href={item.FileRef}  target={`${item.NuevaVentana  == "Sí"   ? "_blank" : "_self"}`} title="Agencia pública de empleo de Colombia" >
              <div className="imgnoti" dangerouslySetInnerHTML={{__html: item.PublishingRollupImage}}></div>
                     <div className="card-body">
                       <h6 className="card-title titulod">{item.TituloEncabezado}</h6>
